@@ -1,0 +1,11 @@
+<div class="container">
+<h1> Katharine's List </h1>
+
+<%  @category.each do |cat| %>
+
+  <a href="/categories/<%=cat.name%>"><%=cat.name%></a>
+
+<% end %>
+<br />
+<a href="/new_post">Add A Post</a>
+</div>
